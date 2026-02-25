@@ -19,7 +19,7 @@
 <br>
 
 ## Preview
-| **잠금 화면 (Matrix Rain)** |
+| **잠금 화면** |
 |:---:|
 | <img width="1920" height="1080" alt="스크린샷 2026-02-25 211744" src="https://github.com/user-attachments/assets/c4461019-c208-4aec-ae1e-e19eb4adf6a5" /> 
 
