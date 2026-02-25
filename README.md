@@ -59,3 +59,27 @@
 * 필요한 라이브러리 설치:
 ```bash
 pip install wmi pywin32
+
+### 2. Configuration
+`setting.py` 와 `computer_unlock.py` 의 상단 설정값을 본인의 환경에 맞게 수정합니다.
+```python
+# [설정 영역]
+TARGET_SERIAL = "2EB405A7"          # 허용할 본인의 USB 볼륨 시리얼
+KEY_FILE_NAME = "unlock.key"        # 발급할 키 파일 이름
+ADMIN_PASSWORD = "1234"             # 관리자 종료용 비밀번호
+
+### 3. Build to `.exe` (Optional)
+사용 편의성을 위해 PyInstaller를 사용하여 실행 파일로 변환할 수 있습니다.
+```bash
+pip install pyinstaller
+pyinstaller --noconsole --onefile computer_unlock.py
+pyinstaller --onefile setting.py
+
+### 4. How to Use (Run)
+프로그램 실행 및 실제 사용 방법입니다.
+
+1. **USB 연결:** 관리자로 등록된 USB(시리얼이 일치하는 USB)를 PC에 꽂습니다.
+2. **키 발급:** `setting.py` (또는 변환된 `setting.exe`)를 실행합니다.
+3. **자동 감시:** USB 내부에 일회용 암호 키가 발급되며, 보안 시스템(`computer_unlock.py`)이 자동으로 백그라운드에서 시작됩니다.
+4. **잠금 및 해제:** 이후 USB를 PC에서 뽑으면 즉시 화면이 잠기고, 다시 꽂으면 잠금이 해제됩니다.
+5. **안전 종료:** 잠금 해제 상태에서 우측 하단의 `보안 종료` 위젯을 누르고 비밀번호를 입력하면, USB 안의 키가 회수되며 프로그램이 완전히 종료됩니다.
