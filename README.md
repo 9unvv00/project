@@ -60,22 +60,14 @@
 ```bash
 pip install wmi pywin32
 ```
-
-### 2. Configuration
-`setting.py` 와 `computer_unlock.py` 의 상단 설정값을 본인의 환경에 맞게 수정합니다.
-```python
-TARGET_SERIAL = "2EB405A7"          # 허용할 본인의 USB 볼륨 시리얼
-KEY_FILE_NAME = "unlock.key"        # 발급할 키 파일 이름
-ADMIN_PASSWORD = "1234"             # 관리자 종료용 비밀번호
-```
-### 3. Build to `.exe` (Optional)
+### 2. Build to `.exe` (Optional)
 사용 편의성을 위해 PyInstaller를 사용하여 실행 파일로 변환할 수 있습니다.
 ```bash
 pip install pyinstaller
 pyinstaller --noconsole --onefile computer_unlock.py
 pyinstaller --onefile setting.py
 ```
-### 4. How to Use (Run)
+### 3. How to Use (Run)
 프로그램 실행 및 실제 사용 방법입니다.
 
 1. **USB 연결:** 관리자로 등록된 USB(시리얼이 일치하는 USB)를 PC에 꽂습니다.
