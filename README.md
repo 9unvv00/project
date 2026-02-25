@@ -64,7 +64,6 @@ pip install wmi pywin32
 ### 2. Configuration
 `setting.py` 와 `computer_unlock.py` 의 상단 설정값을 본인의 환경에 맞게 수정합니다.
 ```python
-# [설정 영역]
 TARGET_SERIAL = "2EB405A7"          # 허용할 본인의 USB 볼륨 시리얼
 KEY_FILE_NAME = "unlock.key"        # 발급할 키 파일 이름
 ADMIN_PASSWORD = "1234"             # 관리자 종료용 비밀번호
