@@ -59,6 +59,7 @@
 * 필요한 라이브러리 설치:
 ```bash
 pip install wmi pywin32
+```
 
 ### 2. Configuration
 `setting.py` 와 `computer_unlock.py` 의 상단 설정값을 본인의 환경에 맞게 수정합니다.
