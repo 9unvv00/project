@@ -21,7 +21,7 @@
 ## 📸 Preview
 | **🔒 잠금 화면 (Matrix Rain)** | **⛔ 접근 거부 (Access Denied)** |
 |:---:|:---:|
-| <img src="./assets/matrix_preview.gif" width="400" alt="Matrix Rain Effect"> | <img src="./assets/access_denied.png" width="400" alt="Access Denied Screen"> |
+| <img width="1920" height="1080" alt="스크린샷 2026-02-25 211744" src="https://github.com/user-attachments/assets/c4461019-c208-4aec-ae1e-e19eb4adf6a5" /> | <img src="./assets/access_denied.png" width="400" alt="Access Denied Screen"> |
 
 *(여기에 실행 화면 캡처나 GIF를 추가하세요)*
 
